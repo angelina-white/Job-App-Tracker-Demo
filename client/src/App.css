@@ -1,38 +1,572 @@
 .App {
+  background-color: #FCFFFE;
+  font-family: Arial;
+}
+
+/* login */
+#loginPhoto {
+  width: 600px;
+  height: 728px;
+}
+
+.loginLeft {
+  float: left;
+}
+
+.loginRight {
+  float: left;
+  text-align: center;
+  margin-left: 225px;
+  margin-top: 125px;
+}
+
+.loginRightBackground {
+  height: 450px;
+  width: 400px;
+  padding-top: 35px;
+  background-color: #E9F5F7;
+  border-radius: 6px;
+}
+
+#loginTitle {
+  color: #3D5961;
+  margin-bottom: 50px;
+}
+
+#loginInput {
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: #3D5961;
+}
+
+#loginOutline:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+#loginButton {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#signupButton {
+  background-color: #97B9C2;
+  border: 0px;
+}
+
+#signupTitle {
+  color: #3D5961;
+  margin-left: 175px;
+}
+
+.signupInput {
+  margin-top: 25px;
+  margin-left: 120px;
+  color: #3D5961;
+}
+
+#signupSubmit {
+  background-color: #97B9C2;
+  border: 0px;
+  margin-left: 185px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* header */
+#title {
+  padding-top: 10px;
+  color: #3D5961;
+  font-family: Georgia;
+}
+
+.titleContainer {
+  height: 70px;
+  background-color: #EDFBFF;
+  padding-left: 25px;
+}
+
+.linksNavBar {
+  list-style-type: none;
+  height: 50px;
+  background-color: #E9F5F7;
+  padding-top: 10px;
+  color: #30454D;
+  margin-left: -20px;
+}
+
+.links {
+  float: left;
+  font-size: 20px;
+  width: 125px;
+}
+
+.links:hover {
+  background-color: #D8F6EC;
+  height: 50px;
+  margin-top: -10px;
+  padding-top: 10px;
+  width: 125px;
+}
+
+.linkSelected {
+  float: left;
+  font-size: 20px;
+  width: 125px;
+  height: 50px;
+  padding-top: 10px;
+  margin-top: -10px;
+  background-color: #D8F6EC;
+  text-decoration: underline;
+}
+
+.navText {
+  color: #30454D;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.navText:hover {
+  color: #385443;
+}
+
+.navText:active{
+  color: #44805A;
+}
+
+#homeLinkText {
+  padding-left: 35px;
+}
+
+#interviewLinkText {
+  padding-left: 17px;
+}
+
+#offerLinkText {
+  padding-left: 35px;
+}
+
+#statsLinkText {
+  padding-left: 38px;
+}
+
+#loggedInUsername {
+  float: left;
+  margin-left: 700px;
+  padding-top: 4px;
+  color: #3D5961;
+}
+
+#logoutButton {
+  float: left;
+  margin-left: 20px;
+  background-color: #FCFFFE;
+  border: 2px solid #97B9C2;
+  transition-duration: 0.3s;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: -2px;
+  font-family: Arial;
+}
+
+#logoutButton:hover {
+  background-color: #97B9C2;
+  color: #FCFFFE;
+}
+
+/* home page */
+.home {
+  margin-top: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#loading {
+  margin-top: 265px;
+  margin-left: -75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#jobsTable {
+  width: 95%;
+  margin-left: 35px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
 }
 
-.App-link {
-  color: #61dafb;
+#jobsTableHeader {
+  flex: 0 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jobsTableBody {
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#jobScroll {
+  height: 470px;
+  overflow: scroll;
+}
+
+.idCol {
+  width: 70px;
+}
+
+#idRadio {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#idRadio:checked {
+  background-color:#A8BFB8;
+  border-color: #A8BFB8;
+}
+
+.dateCol {
+  width: 120px;
+}
+
+#jobDateInput {
+  width: 105px;
+}
+
+#jobDateInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+.statusCol {
+  width: 120px;
+}
+
+#statusInput {
+  width: 75px;
+}
+
+#statusInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+#statusButton {
+  background-color: #E0E9FC;
+  border: #E0E9FC;
+  color: black;
+}
+
+.applicationCol {
+  width: 415px;
+  overflow-x: scroll;
+}
+
+#applicationInput {
+  width: 390px;
+}
+
+#applicationInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+.companyCol {
+  width: 175px;
+}
+
+#companyInput {
+  width: 160px;
+}
+
+#companyInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+.descriptionCol {
+  width: 225px;
+}
+
+#descriptionInput {
+  width: 200px;
+}
+
+#descriptionInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.jobInput {
+  width: 200px;
+}
+
+#jobActionButton {
+  scale: 95%;
+}
+
+#jobActionButtonSmall {
+  scale: 85%;
+  margin-left: -5px;
+}
+
+.applicationLink {
+  color: #457F8F;
+  /* overflow-x: scroll;
+  height: 25px; */
+}
+
+.applicationLink:hover {
+  cursor: pointer; 
+  color: #435A9C;
+}
+
+/* add interview and add offer */
+#addIOButton {
+  margin-right: 15px; 
+  background-color: #A8BFB8;
+  border: solid 1px #A8BFB8;
+}
+
+#addIOButtonGrey {
+  margin-right: 15px; 
+  background-color: #A4ABA9;
+  border: solid 1px #A4ABA9;
+  cursor: not-allowed;
+}
+
+#addInterviewTitle {
+  margin-left: 150px;
+}
+
+.addInterviewInputContainer {
+  margin-top: 15px;
+  margin-left: 100px;
+}
+
+.addInterviewInput {
+  margin-left: 10px;
+}
+
+.addInterviewInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+.addDate {
+  float: left;
+}
+
+.addTime {
+  float: left;
+}
+
+#monthInput {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+#dayInput {
+  width: 50px;
+}
+
+#yearInput {
+  width: 100px;
+  margin-right: 50px;
+}
+
+#hourInput {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+#minuteInput {
+  width: 50px;
+}
+
+#addIOadd {
+  background-color: #A8BFB8;
+  border: solid 1px #A8BFB8;
+}
+
+#addOfferTitle {
+  margin-left: 165px;
+}
+
+.addOfferInputContainer {
+  margin-bottom: 15px;
+  margin-left: 75px;
+}
+
+.addOfferInput {
+  margin-left: 10px;
+}
+
+.addOfferInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+#addOfferSalary {
+  margin-top: 10px;
+}
+
+#intButton {
+  float: left;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+#offerButton {
+  float: left;
+}
+
+#searchIcon {
+  float: left;
+  margin-left: 920px;
+  margin-top: 5px;
+}
+
+.searchBar {
+  float: left;
+  font-size: 15px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+#searchBarInput:focus {
+  outline: solid 4px #E0E9FC;
+}
+
+/* Offers */
+.offer {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.cardUl {
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.cardLi {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+#cardHeader {
+  background-color: #C8E0DD;
+  color: #3D5961;
+  font-weight: bold;
+}
+
+#deleteIcon {
+  float: right;
+  margin-top: 5px;
+}
+
+/* Interviews */
+.interview {
+  text-align: center;
+  padding-top: 25px;
+  font-family: Georgia;
+}
+
+#calendar {
+  margin-left: 45px;
+}
+
+/* stats  */
+.stats {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.statsBackground {
+  height: 525px;
+  width: 1365px;
+  margin-left: 40px;
+  background-color: #F5FCFB;
+  border-radius: 15px;
+  padding-top: 25px;
+  font-family: 'Lato';
+}
+
+#numContainer {
+  height: 100px;
+  padding-top: 30px;
+  color: #3D5961;
+}
+
+.statsData {
+  margin-top: -25px;
+}
+
+.writtenStatsBackground {
+  height: 430px;
+  width: 500px;
+  float: left;
+  padding-top: 45px;
+  margin-left: 75px;
+}
+
+#pendingText {
+  background-color: #FCF67E;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+#offerText {
+  margin-top: 35px;
+  background-color: #7EFC85;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+#rejectText {
+  margin-top: 35px;
+  background-color: #FC7E91;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+#ghostText {
+  margin-top: 35px;
+  background-color: #C0C2C4;
+  width: 200px;
+  height: 50px;
+  margin-left: 150px;
+  padding-top: 10px;
+  border-radius: 4px;
+}
+
+#pendingText:hover {
+  cursor: default; 
+}
+
+#offerText:hover {
+  cursor: default; 
+}
+
+#rejectText:hover {
+  cursor: default; 
+}
+
+#ghostText:hover {
+  cursor: default; 
+}
+
+.pieBackground {
+  float: left;
+  padding-left: 150px;
+}
+
+#statsPie {
+  scale: 125%;
 }
