@@ -60,7 +60,6 @@ function App() {
 
   function renderLists()
   {
-    console.log("ahh")
     fetchData()
   }
 

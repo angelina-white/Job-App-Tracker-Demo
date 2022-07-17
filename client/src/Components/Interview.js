@@ -37,7 +37,7 @@ function Interview({ interviewList })
             style: style
         }
     };
-
+    
     //gets list of interviews for calendar
     const interviewEvents = interviewList.map((item) =>
     {
