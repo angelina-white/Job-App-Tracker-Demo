@@ -34,7 +34,6 @@ function JobItem({ item, deleteJob, handleJobPatch, getJobId })
             dateApplied: newDateApplied,
             description: newDescription,
             applicationLink: newApplicationLink,
-            offer_id: offer.id,
             status: newStatus,
             user_id: user.id,
             company: newCompany
